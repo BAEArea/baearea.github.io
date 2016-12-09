@@ -8,7 +8,7 @@ GOOGLE MAP
 
 			// Map Coordination
 
-			var latlng = new google.maps.LatLng(26.977530,75.692714);
+			var latlng = new google.maps.LatLng(37.384726037,-122.1096420122);
 
 			// Map Options
 			var myOptions = {
@@ -28,30 +28,30 @@ GOOGLE MAP
 
 			// Marker Image
 			var image = 'assets/images/marker.png';
-			
+
 		  	/* ========= First Marker ========= */
 
 		  	// First Marker Coordination
-			
-			var myLatlng = new google.maps.LatLng(26.977530,75.692714);
 
-			// Your Texts 
+			var myLatlng = new google.maps.LatLng(37.385980, -122.107516);
+
+			// Your Texts
 
 			 var contentString = '<div id="content">'+
 			  '<div id="siteNotice">'+
 			  '</div>'+
 			  '<h4>' +
 
-			  '124, Munna Wali'+
+			  '200, Almond Ave'+
 
 			  '</h4>'+
 			  '<p>' +
 
-			  'Sharma House.' +
+			  'Los Altos High School.' +
 
 			  '</p>'+
 			  '</div>';
-			
+
 
 			var marker = new google.maps.Marker({
 				  position: myLatlng,
@@ -65,11 +65,11 @@ GOOGLE MAP
 			  content: contentString
 			  });
 
-			  
+
 			 google.maps.event.addListener(marker, 'click', function() {
 				infowindow.open(map,marker);
 			  });
 
 			 /* ========= End First Marker ========= */
-		
+
 		});

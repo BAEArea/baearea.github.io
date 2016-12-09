@@ -383,7 +383,7 @@ Button style
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
- 
+
 .btn-lg {
   padding: 12px 25px;
 }
@@ -679,13 +679,13 @@ Sliders
   color: #fff;
   font-style: italic;
   font-weight: 300;
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 3rem;
+  line-height: 4rem;
   margin: 20px 0;
   font-family: "Open Sans", sans-serif;
 }
 .testi-slider h5 {
-  color: #bfa67a;
+  color: #fff;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -965,7 +965,7 @@ Pricing tables
   color: #fff;
 }
 
-/* 
+/*
 Portfolio styles
 */
 .work-header {

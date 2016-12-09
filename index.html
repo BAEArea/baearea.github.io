@@ -25,7 +25,33 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+<style>
+.margin-b-30 {
+  padding:10px;
+}
+.desc1 {
+  transition: 1000ms;
+}
+.desc1:hover {
+  color:black;
+}
+.content {
+  height: 200px;
+}
+.itvw1 {
+  transition: all .2s ease-in-out;
+}
+.itvw1:hover {
+  transform: scale(1.1);
+}
+/*.itvwcol {
+  transition: all .2s ease-in-out;
+}
+.itvwcol:hover {
+  transform: scale(1.1);
+}*/
 
+</style>
     </head>
     <body data-spy="scroll">
         <!--pre-loader-->
@@ -95,7 +121,7 @@
 					<span>B</span><span>&Delta;</span><span>e</span> <span id="rotate">&Delta;</span>
 				</span>re&Delta;
 			</span>
-			<div class="dropdown-ctnt" style="z-index: -1">
+			<div class="dropdown-ctnt" style="z-index: -1;pointer-events: none;">
 				<h1> a y </h1>
 				<h1> r e a </h1>
 				<h1> n d a n g e r e d </h1>
@@ -106,19 +132,14 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right scroll-to">
                         <li class="active"><a href="#home">Home</a></li>
-                        <li><a href="#agency">Agency</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#work">Portfolio</a></li>
+                        <li><a href="#agency">Endangered Animals</a></li>
+
+                        <li><a href="#historical">Historical Conncetions</a></li>
+
+                        <li><a href="#interviews">Interviews</a></li>
+                        <li><a href="#services">Solutions</a></li>
+                        <li><a href="#work">Bibliography</a></li>
                         <li><a href="#contact">contact</a></li>
-                        <li class="dropdown">
-                            <span class="dropdown-toggle menu-drop-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <i class="fa fa-arrow-down"></i></span>
-                            <ul class="dropdown-menu">
-                                <li><a href="blog-standard.html">Blog Standard</a></li>
-                                <li><a href="blog-masonry.html">Blog Masonry</a></li>
-                                <li><a href="blog-single.html">blog-post</a></li>
-                                <li><a href="typography.html">Typography</a></li>
-                            </ul>
-                        </li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div><!--/.container -->
@@ -126,14 +147,23 @@
 	<script>
 		$("#logo-text").on("mouseover", function(){
 			$(".hover-color").css({"color": "#bfa67a"});
-			console.log("hi");
+			// console.log("hi");
 			$(".dropdown-ctnt").css({"opacity": 1});
 		});
 		$("#logo-text").on("mouseleave", function(){
 			$(".hover-color").css({"color": "#888"});
-			console.log("bye")
+			// console.log("bye")
 			$(".dropdown-ctnt").css({"opacity": 0});
 		});
+
+    $(document).ready(function(){
+      //console.log("hi");
+      $(".itvw1").on("mouseover", function(){
+        $(".itvwcol").css({overflow:"visible"});
+        $(".pricing-wrapper").css({overflow:"visible"});
+        $(".pricing-wrapper").children().css({overflow: "visible"});
+      });
+    })
 
 	</script>
         <!--end navigation-->
@@ -141,86 +171,171 @@
         <section id="agency">
             <div class="space-100"></div>
             <div class="container">
-                <h2 class="center-title scrollReveal sr-bottom">Who we are</h2>
+                <h3 class="center-title scrollReveal sr-bottom">Endangered Animals</h3>
                 <div class="center-border"></div>
                 <div class="space-40"></div>
                 <div>
                     <!-- Nav tabs -->
                     <ul class="list-inline text-center about-tabs margin-b-40" role="tablist">
-                        <li role="presentation" class="active"><a href="#about-agency" aria-controls="about-agency" role="tab" data-toggle="tab">About</a></li>
-                        <li role="presentation"><a href="#skills" aria-controls="skills" role="tab" data-toggle="tab">Skills</a></li>
-                        <li role="presentation"><a href="#process" aria-controls="process" role="tab" data-toggle="tab">Process</a></li>
+                        <li role="presentation" class="active"><a href="#mammals" aria-controls="mammals" role="tab" data-toggle="tab">Mammals</a></li>
+                        <li role="presentation"><a href="#birds" aria-controls="birds" role="tab" data-toggle="tab">Birds</a></li>
+                        <li role="presentation"><a href="#reptiles" aria-controls="reptiles" role="tab" data-toggle="tab">Reptiles</a></li>
+                        <li role="presentation"><a href="#amphibians" aria-controls="amphibians" role="tab" data-toggle="tab">Amphibians</a></li>
+                        <li role="presentation"><a href="#fish" aria-controls="fish" role="tab" data-toggle="tab">Fish</a></li>
+                        <li role="presentation"><a href="#insects" aria-controls="insects" role="tab" data-toggle="tab">Insects</a></li>
                     </ul>
 
                     <!-- Tab panes -->
+
                     <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="about-agency">
-                            <div class="row">
-                                <div class="col-sm-8 col-sm-offset-2 text-center">
-                                    <p class="lead">
-					We are a trio of very cool teenagers doing stuff that's really cool. If you want to be us, you can't. Cheers.
-                                    </p>
-                                </div>
-                            </div>
+                        <div role="tabpanel" class="tab-pane active" id="mammals">
+                          <div class="row">
+                              <div class="col-md-2 col-sm-6 margin-b-30 col-md-offset-1">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">1.</span> Mountain Beaver</h3>
+                                  </div>
+                              </div>
+                              <div class="col-md-2 col-sm-6 margin-b-30">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">2.</span> Salt Marsh Harvest Mouse</h3>
+                                  </div>
+                              </div>
+                              <div class="col-md-2 col-sm-6 margin-b-30">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">3.</span> San Joaquin Kit Fox</h3>
+                                  </div>
+                              </div>
+                              <div class="col-md-2 col-sm-6 margin-b-30">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">4.</span> Southern Sea Otter</h3>
+                                  </div>
+                              </div>
+
+                              <div class="col-md-2 col-sm-6 margin-b-30">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">5.</span> Humpback Whale</h3>
+                                  </div>
+                              </div>
+                          </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane" id="skills">
-                            <div class="col-sm-8 col-sm-offset-2 text-center">
-                                <div class="progress clearfix">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                                        <span class="skill-name">$wag</span>  <span class="pull-right value">80%</span>
+                        <div role="tabpanel" class="tab-pane" id="birds">
+                          <div class="row">
+                              <div class="col-md-2 col-sm-6 margin-b-30 col-md-offset-1">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">1.</span> Bald Eagle</h3>
+                                  </div>
+                              </div>
+                              <div class="col-md-2 col-sm-6 margin-b-30">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">2.</span> California Brown Pelican</h3>
+                                  </div>
+                              </div>
+                              <div class="col-md-2 col-sm-6 margin-b-30">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">3.</span> California Clapper Rail</h3>
+                                  </div>
+                              </div>
+                              <div class="col-md-2 col-sm-6 margin-b-30">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">4.</span> California Least Tern</h3>
+                                  </div>
+                              </div>
+                              <div class="col-md-2 col-sm-6 margin-b-30">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">5.</span> Marbled Murrelet</h3>
+                                  </div>
+                              </div>
+                          </div>
+                        </div><!--tab panel end-->
+                        <div role="tabpanel" class="tab-pane" id="reptiles">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-6 margin-b-30 col-md-offset-2">
+                                    <div class="process-box">
+                                        <h3><span class="text-color">1.</span> Alameda Striped Racer</h3>
                                     </div>
-                                </div><!--progress bar-->
-                                <div class="progress clearfix">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                                        <span class="skill-name">Steeze</span>  <span class="pull-right value">70%</span>
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin-b-30">
+                                    <div class="process-box">
+                                        <h3><span class="text-color">2.</span> Coast Horned Lizard</h3>
                                     </div>
-                                </div><!--progress bar-->
-                                <div class="progress clearfix">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                                        <span class="skill-name">Charm</span>  <span class="pull-right value">90%</span>
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin-b-30">
+                                    <div class="process-box">
+                                        <h3><span class="text-color">3.</span> Pacific Pond Turtle</h3>
                                     </div>
-                                </div><!--progress bar-->
-                                <div class="progress clearfix">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:97%">
-                                        <span class="skill-name">Earl Grey Tea</span>  <span class="pull-right value">97%</span>
+                                </div>
+                                <div class="col-md-2 col-sm-6 margin-b-30">
+                                    <div class="process-box">
+                                        <h3><span class="text-color">4.</span> San Francisco Gartersnake</h3>
                                     </div>
-                                </div><!--progress bar-->
+                                </div>
                             </div>
                         </div><!--tab panel end-->
-                        <div role="tabpanel" class="tab-pane" id="process">
+                        <div role="tabpanel" class="tab-pane" id="amphibians">
                             <div class="row">
-                                <div class="col-md-3 col-sm-6 margin-b-30">
-                                    <div class="process-box">
-                                        <h2><span class="text-color">1.</span> Take years to pick a topic</h2>
-                                        <p>
-					    Pretty self-explanatory, just procrastinate your heart out.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 margin-b-30">
-                                    <div class="process-box">
-                                        <h2><span class="text-color">2.</span> Do no research</h2>
-                                        <p>
-					    Yay.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 margin-b-30">
-                                    <div class="process-box">
-                                        <h2><span class="text-color">3. Website</span></h2>
-                                        <p>
-					    Get A.J. to make a sick website with random content.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 margin-b-30">
-                                    <div class="process-box">
-                                        <h2><span class="text-color">4.</span> Launch</h2>
-                                        <p>
-					    Pull an allnighter and add relevant content to the website.
-                                        </p>
-                                    </div>
-                                </div>
+                              <div class="col-md-4 col-sm-6 margin-b-30 col-md-offset-2">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">1.</span> California Tiger Salamander</h3>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 col-sm-6 margin-b-30">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">2.</span> Red-legged Frog</h3>
+                                  </div>
+                              </div>
+                            </div>
+                        </div><!--tab panel end-->
+                        <div role="tabpanel" class="tab-pane" id="fish">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-6 margin-b-30 col-md-offset-2">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">1.</span> Delta Smelt</h3>
+                                  </div>
+                              </div>
+                              <div class="col-md-2 col-sm-6 margin-b-30">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">2.</span> Steelhead Trout</h3>
+                                  </div>
+                              </div>
+                              <div class="col-md-2 col-sm-6 margin-b-30">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">3.</span> Coho Salmon</h3>
+                                  </div>
+                              </div>
+                              <div class="col-md-2 col-sm-6 margin-b-30">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">4.</span> Tidewater Goby</h3>
+                                  </div>
+                              </div>
+                            </div>
+                        </div><!--tab panel end-->
+                        <div role="tabpanel" class="tab-pane" id="insects">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-6 margin-b-30 col-md-offset-1">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">1.</span> Ohlone Tiger Beetle</h3>
+                                  </div>
+                              </div>
+                              <div class="col-md-2 col-sm-6 margin-b-30">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">2.</span> Mt. Hermon Beetle</h3>
+                                  </div>
+                              </div>
+                              <div class="col-md-2 col-sm-6 margin-b-30">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">3.</span> Delta Green Ground Beetle</h3>
+                                  </div>
+                              </div>
+                              <div class="col-md-2 col-sm-6 margin-b-30">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">4.</span> Zayante Band-Winged Grasshopper</h3>
+                                  </div>
+                              </div>
+                              <div class="col-md-2 col-sm-6 margin-b-30">
+                                  <div class="process-box">
+                                      <h3><span class="text-color">5.</span> San Francisco Lacewing</h3>
+                                  </div>
+                              </div>
                             </div>
                         </div><!--tab panel end-->
                     </div><!--tab content end-->
@@ -232,14 +347,16 @@
 
 
         <!-- Parallax -->
+        <section id="historical">
         <div class="dzsparallaxer auto-init" data-options='{   direction: "reverse"}' style="height: 350px;">
 
             <div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url(assets/images/endangered2.jpg)">
             </div>
             <div class=" parallax-text text-center center-it">
-                <h2>" Raising Awareness of Endangered Animals in California "</h2>
+                <h1 style="color: white">Historical Connections</h1>
             </div>
         </div>
+      </section>
         <!-- End Parallax -->
 
         <!--our team start-->
@@ -247,54 +364,18 @@
             <div class="space-100"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-md-4 margin-b-30">
-                        <div class="person-col scrollReveal sr-bottom sr-ease-in-out-quad sr-delay-1">
-                            <img src="assets/images/ianc.jpg" alt="" class="img-responsive">
-                            <div class="person-overlay">
-                                <div class="person-inner">
-                                    <h4 class="text-uppercase">Ian Conceicao</h4>
-                                    <span>Researcher</span>
-                                    <ul class="list-inline">
-                                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div><!--person overlay end-->
-                        </div><!--person col end-->
-                    </div><!--col-->
-                    <div class="col-sm-6 col-md-4 margin-b-30">
-                        <div class="person-col person-col scrollReveal sr-bottom sr-ease-in-out-quad sr-delay-2">
-                            <img src="assets/images/aj.jpg" alt="" class="img-responsive">
-                            <div class="person-overlay">
-                                <div class="person-inner">
-                                    <h4 class="text-uppercase">A.J. Uppal</h4>
-                                    <span>Developer</span>
-                                    <ul class="list-inline">
-                                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div><!--person overlay end-->
-                        </div><!--person col end-->
-                    </div><!--col-->
-                    <div class="col-sm-6 col-md-4 margin-b-30">
-                        <div class="person-col person-col scrollReveal sr-bottom sr-ease-in-out-quad sr-delay-3">
-                            <img src="assets/images/iant.jpg" alt="" class="img-responsive">
-                            <div class="person-overlay">
-                                <div class="person-inner">
-                                    <h4 class="text-uppercase">Ian Tseng</h4>
-                                    <span>Researcher</span>
-                                    <ul class="list-inline">
-                                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div><!--person overlay end-->
-                        </div><!--person col end-->
-                    </div><!--col-->
+                    <div class="col-md-3 col-sm-6">
+                      <p class="desc1">Teddy Roosevelt, one of the most environmentally progressive presidents created numerous National Parks across the United States.  These National Parks were sanctuaries where development was illegal.  The byproduct of a developmentally protected land was an area where animal life could prosper.  For example in The Teddy Roosevelt National  Park there was an abundance of endangered animals prospering.  These animals include, but are not limited to: Bison, hundreds of different birds, reptiles, and mammals.  </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                      <p class="desc1">Teddy Roosevelt's approach of effectively creating animal sanctuaries would be a worthwhile approach for the Bay Area.  In fact, in shoreline these areas already exist and are helpful at maintaining animal populations. </p>
+                      </div>
+                    <div class="col-md-3 col-sm-6">
+                      <p class="desc1">One of the most influential pieces of endangered act legislature was the Endangered Species Act.  The first step of the legislature, passed in 1973, declared the list of endangered animals.  This was revolutionary because it was the first time they officially categorized animals into endangered and not endangered.  To categorize animals we still use this list today.  The Endangered Species Act also outlined a recovery plan focused on an objective, systematic way to increase population of animals. </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                      <p class="desc1">More related to California, the California Endangered Species Act vows to protect any species that is endangered or facing a serious decline in population.  This law circumvents a reliance on taxes but instead relies on fees.  If any animals are ever threatened  then “the California Department of Fish and Wildlife will work with all interested persons, agencies and organizations to protect and preserve such sensitive resources and their habitats” according to the legislature.  The law represents a noticeable uprise of community interest in protecting species, ensuring that everything will be done in power to ensure the Californian species will survive.</p>
+                    </div>
                 </div><!--row-->
             </div>
             <div class="space-70"></div>
@@ -307,21 +388,44 @@
             <div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url(assets/images/endangered3.jpg)">
             </div>
             <div class=" parallax-text text-center center-it">
-                <h2>Take a video tour</h2>
+                <h1 style="color:white">The California Steelhead</h3>
                 <center>
                 <a href="#" class="video-link" data-toggle="modal" data-target="#video-popup"><i class="fa fa-play"></i></a>
               </center>
             </div>
         </div>
         <!--end vide tour-->
-
+        <div class="team-wrapper">
+            <div class="space-100"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                      <a href="https://www.wildlife.ca.gov/Conservation/CESA"><h3 style="height:52px;">California Endangered Species Act</h3></a><hr>
+                      <p class="desc1">“all native species of fishes, amphibians, reptiles, birds, mammals, invertebrates, and plants, and their habitats, threatened with extinction and those experiencing a significant decline which, if not halted, would lead to a threatened or endangered designation, will be protected or preserved”
+</p><hr><p class="desc1">Protects and preserves all Californian species that are exhibiting some sort of decline.
+</p>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <a href="https://www.fws.gov/endangered/laws-policies/"><h3 style="height:52px;">Federal Endangered Species Act</h3></a><hr>
+                      <p class="desc1">“When Congress passed the Endangered Species Act (ESA) in 1973, it recognized that our rich natural heritage is of “esthetic, ecological, educational, recreational, and scientific value to our Nation and its people.” It further expressed concern that many of our nation’s native plants and animals were in danger of becoming extinct.”</p>
+<hr><p class="desc1">“Under the ESA, species may be listed as either endangered or threatened. “Endangered” means a species is in danger of extinction throughout all or a significant portion of its range. “Threatened” means a species is likely to become endangered within the foreseeable future. All species of plants and animals, except pest insects, are eligible for listing as endangered or threatened. For the purposes of the ESA, Congress defined species to include subspecies, varieties, and, for vertebrates, distinct population segments.”
+</p>
+                      </div>
+                    <div class="col-md-3 col-sm-3">
+                      <a href="https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=98243&inline"><h3 style="height:52px;">CDFW</h3></a><hr>
+                      <p class="desc1">The Cooperative Agreement Between the California Department of Fish and Wildlife and The U.S. Fish and Wildlife Service financially supports species.</p>
+                    </div>
+                </div><!--row-->
+            </div>
+            <div class="space-70"></div>
+        </div>
         <!--start services-->
         <section id="services">
             <div class="space-100"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 margin-b-50">
-                        <h2 class="center-title">What we do</h2>
+                        <h3 class="center-title">Solutions</h3>
                         <div class="center-border"></div>
                     </div>
                 </div><!--row end-->
@@ -330,57 +434,54 @@
                     <div class="col-md-8 col-md-offset-2">
                         <ul class="row list-unstyled services-list">
                             <li class="col-sm-6 clearfix scrollReveal sr-bottom">
-                                <i class="ion-ios-briefcase-outline"></i>
+                                <i class="fa fa-paw"></i>
                                 <div class="content">
-                                    <h4>Marketing</h4>
+                                    <h4>Keep Pets Inside</h4>
                                     <p>
-                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                        Cats, both house pets and feral, can kill more than a million songbirds a year. We have documented depredation of endangered clapper rails, snowy plovers, and California least terns that were killed by cats.
                                     </p>
                                 </div>
                             </li><!--service col end with li-->
                             <li class="col-sm-6 clearfix  scrollReveal sr-bottom sr-delay-1">
-                                <i class="ion-images"></i>
+                                <i class="fa fa-trash"></i>
                                 <div class="content">
-                                    <h4>Web Design</h4>
+                                    <h4>Don't Litter</h4>
                                     <p>
-                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                                    </p>
+                                        Trash makes its way into marshes and streams and into the diet of animals.
+                                      </p>
                                 </div>
                             </li><!--service col end with li-->
                             <li class="col-sm-6 clearfix scrollReveal sr-bottom sr-delay-2">
-                                <i class="ion-bag"></i>
+                                <i class="fa fa-map-signs"></i>
                                 <div class="content">
-                                    <h4>E-commerce</h4>
+                                    <h4>Follow Signs</h4>
                                     <p>
-                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                      One way we protect animals is to keep people and their pets from disturbing sensitive areas. For example when Snowy Plovers are nesting, we put up cable fencing to prevent people from entering the nesting areas and inadvertently stepping on camouflaged nests.
                                     </p>
                                 </div>
                             </li><!--service col end with li-->
                             <li class="col-sm-6 clearfix scrollReveal sr-bottom sr-delay-3">
-                                <i class="ion-hammer"></i>
+                                <i class="fa fa-search"></i>
                                 <div class="content">
-                                    <h4>Web Development</h4>
+                                    <h4>Be Active</h4>
                                     <p>
-                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                                    </p>
+                                        Get outside and learn about local species in your area.</p>
                                 </div>
                             </li><!--service col end with li-->
                             <li class="col-sm-6 clearfix scrollReveal sr-bottom sr-delay-4">
-                                <i class="ion-ios-people-outline"></i>
+                                <i class="fa fa-tree"></i>
                                 <div class="content">
-                                    <h4>Free Support</h4>
+                                    <h4>Support the Wildlife</h4>
                                     <p>
-                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                                    </p>
+                                        Help with restoration at a local Refuge, park and even your backyard. Creating wildlife friendly gardens for Monarchs in your backyard or at school not only helps Monarchs, but also other native butterflies, birds and insects.</p>
                                 </div>
                             </li><!--service col end with li-->
                             <li class="col-sm-6 clearfix scrollReveal sr-bottom sr-delay-5">
-                                <i class="ion-iphone"></i>
+                                <i class="fa fa-gavel"></i>
                                 <div class="content">
-                                    <h4>App Development</h4>
+                                    <h4>Become an Advocate</h4>
                                     <p>
-                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                                    </p>
+                                        By voting for Measure AA, Bay Area residents said the health of the Bay Area was important.</p>
                                 </div>
                             </li><!--service col end with li-->
                         </ul><!--service list end-->
@@ -388,10 +489,6 @@
                 </div><!--row end-->
                 <hr>
                 <div class="space-60"></div>
-                <div class="text-center scrollReveal sr-bottom">
-                    <h1 class="margin-b-20">Want to work with us</h1>
-                    <a href="#" class="btn btn-dark-border btn-lg">Our Portfolio</a>
-                </div>
             </div>
         </section>
         <!--end services-->
@@ -401,31 +498,31 @@
         <!-- Parallax -->
         <div class="dzsparallaxer auto-init" data-options='{   direction: "reverse"}' style="height: 350px;">
 
-            <div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url(assets/images/endangered4.jpg)">
+            <div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url(assets/images/endangered5.jpg); -webkit-filter: blur(5px); filter: blur(5px);">
             </div>
             <div class=" parallax-text text-center center-it">
                 <div class="testi-slider">
                     <ul class="slides">
                         <li>
-                            <i class="ion-quote"></i>
+                            <i class="fa fa-quote-left"></i>
                             <p>
-                                " Great work done. Very clean design and super easy code help me to launch my site quickly. "
+                                " Since all wildlife is interconnected, losing species will slowly destroy our ecosystem. "
                             </p>
-                            <h5>John Doe</h5>
+                            <h5>Marina</h5>
                         </li><!--li-->
                         <li>
-                            <i class="ion-quote"></i>
+                            <i class="fa fa-quote-left"></i>
                             <p>
-                                " A super clean full pack one page theme. great work. "
+                                " We are losing pollinators, and smaller prey species.  These losses work their way up the food chain. "
                             </p>
-                            <h5>Emily</h5>
+                            <h5>Marina</h5>
                         </li><!--li-->
                         <li>
-                            <i class="ion-quote"></i>
+                            <i class="fa fa-quote-left"></i>
                             <p>
-                                " It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. "
+                                " By protecting habitat, entire communities of animals and plants can be protected together. "
                             </p>
-                            <h5>Alex</h5>
+                            <h5>Rachel Tertes</h5>
                         </li><!--li-->
                     </ul>
                 </div>
@@ -435,78 +532,50 @@
 
 
         <!--pricing start-->
-        <section class="pricing-wrapper">
+        <section class="pricing-wrapper" id="interviews" style="overflow:visible">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4 margin-b-30">
+                    <div class="col-sm-6 margin-b-30 itvwcol" style="overflow:visible">
                         <div class="price-box scrollReveal sr-scaleDown sr-ease-in-out-back">
-                            <h3>Starter</h3>
-                            <h1><sup>$</sup> 6</h1>
+                            <h3>Marina, SF Zoo Volunteer</h3>
                             <ul class="list-unstyled">
-                                <li>6 Months Support</li>
-                                <li>2 Demos</li>
-                                <li>Mailchimp Form</li>
-                                <li>Php Contact Form</li>
-                                <li>1 Domain</li>
+                              <li class="itvw1"><span class="text-color">What role does the San Francisco Zoo have with endangered animals?</span><br>The SF Zoo, as a member of the Association of Zoos and Aquariums (AZA), participates in Species Survival Programs (SSPs) for the endangered animals we exhibit and care for.  Here is a link to info on SSPs:  https://www.aza.org/ssp-population-sustainability
+                              And, here is a link to descriptions of other conservation efforts we’re involved with: http://www.sfzoo.org/conservation/overview.htm
+                            </li>
+                              <li class="itvw1"><span class="text-color">What are the most notable endangered species in the bay area today? Do you foresee their population statuses improving? Declining?</span><br>A list of Bay Area endangered species can be found here:  http://www.sfbaywildlife.info/species/endangered.htm
+                              The SF Zoo has had a very successful bald eagle breed-for-release program.  Bald eagles are making a come-back in the Bay Area.
+                              We are also actively working to restore habitat in the Bay Area to protect native species.  We are hopeful that this work will help save populations of San Francisco garter snake and red-legged frog.
+                               </li>
+                              <li class="itvw1"><span class="text-color">What are the main causes that are driving these animals extinct? Who do you think are the most responsible for these causes?</span><br>Habitat degradation, fragmentation and destruction are the primary reasons for loss of species in this area.  Human overpopulation is a major factor in loss of habitat for native species.
+                               </li>
+                              <li class="itvw1"><span class="text-color">What would be the consequences if these animals went extinct?</span><br>Since all wildlife is interconnected, losing species will slowly destroy our ecosystem.  We are losing pollinators, and smaller prey species.  These losses work their way up the food chain.
+                          </li>
+                              <li class="itvw1"><span class="text-color">How can the average person ameliorate the population of local endangered species?</span><br>We each can all help by spreading the word about the importance of conservation, by educating others.  We can also act as role models; practice what we preach by demonstrating our commitment to conservation: reduce, reuse, recycle, restore.  And we can support organizations that are doing good in the world.
+</li>
                             </ul>
-                            <div class="price-footer">
-                                <a href="#" class="btn btn-lg btn-dark-border">Buy Now</a>
-                            </div>
                         </div><!--price box-->
                     </div><!--price col-->
-                    <div class="col-sm-4 margin-b-30">
-                        <div class="price-box  scrollReveal sr-scaleDown sr-ease-in-out-back sr-delay-1">
-                            <h3>Business</h3>
-                            <span class="best-label">Best Value</span>
-                            <h1><sup>$</sup> 21</h1>
+                    <div class="col-sm-6 margin-b-30 itvwcol" style="overflow:visible">
+                        <div class="price-box scrollReveal sr-scaleDown sr-ease-in-out-back">
+                            <h3>Rachel Tertes, USFWS Wildlife Biologist</h3>
                             <ul class="list-unstyled">
-                                <li>12 Months Support</li>
-                                <li>10 Demos</li>
-                                <li>Mailchimp Form</li>
-                                <li>Php Contact Form</li>
-                                <li>5 Domain</li>
+                              <li class="itvw1"><span class="text-color">Why does the Don Edwards San Francisco Bay National Wildlife Refuge build refuges for wildlife?</span><br>
+ Our refuge mission is to preserve and enhance wildlife habitat; protect migratory birds and threatened and endangered species; and provide opportunities for wildlife-oriented recreation and nature study for the surrounding communities. We are the first Urban national wildlife refuge  and our creation was largely the result of grassroots efforts by the local community to protect the San Francisco Bay ecosystem.
+</li>
+
+<li class="itvw1"><span class="text-color">Why is it human’s duty to protect animal habitats and threatened animals?</span><br>
+For the most part, human's are the reason these animals and habitats are declining. In our case, the San Francisco Bay used to be surrounded by a large network of wetlands and tidal marsh spanning 190,000 acres. As people started moving to California, they developed infrastructure, filled marshes for housing and airports, diked marshes for salt production and kept chipping away at the marshes around the Bay. Today, there is only roughly 40,000 acres, just 15% of the original acreage, of tidal marsh left and the plants and animals have had to struggle to fit in a smaller foot print. The smaller foot print means increased stressors such as edge effects, predators, disturbance, and changed water regimes.  We have the responsibility and the ability to not only protect but restore these tidal marshes to benefit plants and animals, improve water quality and even address climate change.  We are fortunate to be part of the South Bay Salt Pond Restoration Project, the largest wetland restoration project on the West coast which is working towards these goals.
+</li>
+
+
+<li class="itvw1"><span class="text-color">Is there anything else we should know about this topic?</span><br>
+By protecting habitat, entire communities of animals and plants can be protected together. To protect habitats, we must work together with federal, state, and local agencies, NGOs and local communities to garner support, participation and collectively provide creative solutions.</li>
                             </ul>
-                            <div class="price-footer">
-                                <a href="#" class="btn btn-lg btn-dark-border">Buy Now</a>
-                            </div>
                         </div><!--price box-->
                     </div><!--price col-->
-                    <div class="col-sm-4 margin-b-30">
-                        <div class="price-box scrollReveal sr-scaleDown sr-ease-in-out-back sr-delay-2">
-                            <h3>Advanced</h3>
-                            <h1><sup>$</sup> 49</h1>
-                            <ul class="list-unstyled">
-                                <li>Unlimited Support</li>
-                                <li>20 Demos</li>
-                                <li>Mailchimp Form</li>
-                                <li>Php Contact Form</li>
-                                <li>Unlimited Domain</li>
-                            </ul>
-                            <div class="price-footer">
-                                <a href="#" class="btn btn-lg btn-dark-border">Buy Now</a>
-                            </div>
-                        </div><!--price box-->
-                    </div><!--price col-->
+
                 </div>
 
-                <div class="row scrollReveal sr-bottom sr-delay-2">
-                    <div class="col-sm-8 col-sm-offset-2 text-center">
-                        <p class="margin-b-30">Get the latest offer from us <a data-toggle="collapse"  href="#newsletter" aria-expanded="false" aria-controls="newsletter">Subscribe</a></p>
-                        <div class="collapse" id="newsletter">
-                            <div class="newsletter-form">
-                                <form role="form" method="post" action="#" class="subscribe-form  xone-newsletter">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="email" placeholder="Enter email to subscribe">
-                                    </div>
-                                    <div>
-                                        <button class="btn btn-skin-border btn-lg" name="submit" type="submit">Notify me</button>
-                                    </div>
-                                </form>
-
-                            </div>
-                        </div>
-                    </div>
-                </div><!--row-->
             </div><!--container-->
         </section>
         <!--pricing end-->
@@ -517,101 +586,41 @@
         <section id="work">
             <div class="work-header">
                 <div class="container">
-                    <h2 class="center-title person-col">Portfolio</h2>
+                    <h3 class="center-title person-col">Bibliography</h3>
                     <div class="center-border"></div>
-                    <p class="text-center margin-b-20">Present your work in beautiful way </p>
+                    <p class="text-center margin-b-20">Sources Cited </p>
                 </div>
             </div><!--work header-->
             <!--filter start-->
             <div class="container">
-                <div id="js-filters-awesome-work" class="cbp-l-filters-work">
-                    <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
-                        SHOW ALL
-                    </div>
-                    <div data-filter=".identity" class="cbp-filter-item">
-                        IDENTITY <div class="cbp-filter-counter"></div>
-                    </div>
-                    <div data-filter=".web-design" class="cbp-filter-item">
-                        WEB DESIGN <div class="cbp-filter-counter"></div>
-                    </div>
-                    <div data-filter=".graphic" class="cbp-filter-item">
-                        GRAPHIC <div class="cbp-filter-counter"></div>
-                    </div>
-                    <div data-filter=".logos" class="cbp-filter-item">
-                        LOGO <div class="cbp-filter-counter"></div>
-                    </div>
-                </div><!--filter nav end-->
+              <div class="space-100"></div>
+                <div class="col-md-offset-1" style="font-size: 1.75rem;
+    line-height: 35px;">
+                  "Endangered Species Of Wildlife In San Francisco Bay Area : Sfbaywildlife.Info". Sfbaywildlife.info. N. p., 2016. Web. 6 Dec. 2016.
 
-                <div id="js-grid-awesome-work" class="cbp cbp-l-grid-work">
-                    <div class="cbp-item identity">
-                        <a href="assets/ajax-awesome-work/project1.html" class="cbp-caption cbp-singlePage" rel="nofollow">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="assets/images/w1.jpg" alt="">
-                            </div>
-                            <div class="cbp-caption-activeWrap"></div>
-                        </a>
-                        <a href="assets/ajax-awesome-work/project1.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Project Title</a>
-                        <div class="cbp-l-grid-work-desc">Web Design / Graphic</div>
-                    </div><!--work item-->
-                    <div class="cbp-item web-design logos">
-                        <a href="assets/ajax-awesome-work/project2.html" class="cbp-caption cbp-singlePage" rel="nofollow">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="assets/images/w2.jpg" alt="">
-                            </div>
-                            <div class="cbp-caption-activeWrap"></div>
-                        </a>
-                        <a href="assets/ajax-awesome-work/project2.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Project Title</a>
-                        <div class="cbp-l-grid-work-desc">Logo / Web Design</div>
-                    </div><!--work item-->
-                    <div class="cbp-item graphic logos">
-                        <a href="assets/ajax-awesome-work/project3.html" class="cbp-caption cbp-singlePage" rel="nofollow">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="assets/images/w3.jpg" alt="">
-                            </div>
-                            <div class="cbp-caption-activeWrap"></div>
-                        </a>
-                        <a href="assets/ajax-awesome-work/project3.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Project Title</a>
-                        <div class="cbp-l-grid-work-desc">Graphic / Logo</div>
-                    </div><!--work item-->
-                    <div class="cbp-item web-design graphic">
-                        <a href="assets/ajax-awesome-work/project4.html" class="cbp-caption cbp-singlePage" rel="nofollow">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="assets/images/w4.jpg" alt="">
-                            </div>
-                            <div class="cbp-caption-activeWrap"></div>
-                        </a>
-                        <a href="assets/ajax-awesome-work/project4.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Project Title</a>
-                        <div class="cbp-l-grid-work-desc">Web Design / Graphic</div>
-                    </div><!--work item-->
-                    <div class="cbp-item identity web-design">
-                        <a href="assets/ajax-awesome-work/project5.html" class="cbp-caption cbp-singlePage" rel="nofollow">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="assets/images/w5.jpg" alt="">
-                            </div>
-                            <div class="cbp-caption-activeWrap"></div>
-                        </a>
-                        <a href="assets/ajax-awesome-work/project5.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Project Title</a>
-                        <div class="cbp-l-grid-work-desc">Web Design / Identity</div>
-                    </div><!--work item-->
-                    <div class="cbp-item identity web-design">
-                        <a href="assets/ajax-awesome-work/project6.html" class="cbp-caption cbp-singlePage" rel="nofollow">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="assets/images/w6.jpg" alt="">
-                            </div>
-                            <div class="cbp-caption-activeWrap"></div>
-                        </a>
-                        <a href="assets/ajax-awesome-work/project6.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Project Title</a>
-                        <div class="cbp-l-grid-work-desc">Identity / Web Design</div>
-                    </div><!--work item-->
-                </div><!--grid end-->
+<br>
+"Endangered Species Act & California Endangered Species Act Recovery - California Department Of Fish And Wildlife". Dfg.ca.gov. N. p., 2016. Web. 6 Dec. 2016.
 
-                <div id="js-loadMore-awesome-work" class="cbp-l-loadMore-button">
-                    <a href="assets/ajax-awesome-work/loadMore.html" class="cbp-l-loadMore-link" rel="nofollow">
-                        <span class="cbp-l-loadMore-defaultText">LOAD MORE</span>
-                        <span class="cbp-l-loadMore-loadingText">LOADING...</span>
-                        <span class="cbp-l-loadMore-noMoreLoading">NO MORE WORKS</span>
-                    </a>
-                </div><!--work load more-->
+<br>
+
+Service, U.S. Fish and Wildlife. "U.S. Fish and Wildlife Service." U.S. Fish and Wildlife Service. N.p., n.d. Web. 06 Dec. 2016.
+
+<br>
+
+"San Francisco Zoo". Sfzoo.org. N. p., 2016. Web. 6 Dec. 2016.
+
+<br>
+
+"Wildlife Rehabilitation & Release - Help Keep Wildlife Wild (530) 432-5522". Cawildlife911.org. N. p., 2016. Web. 6 Dec. 2016.
+
+<br>
+
+"Animals - Theodore Roosevelt National Park (U.S. National Park Service)". Nps.gov. N. p., 2016. Web. 6 Dec. 2016.
+
+<br>
+
+Gaind, Nisha. "US Endangered-Species Recovery Surges To Record High". Nature (2016): n. pag. Web. 6 Dec. 2016.
+</div>
             </div><!--container end-->
         </section>
         <!--portfolio end-->
@@ -661,7 +670,7 @@
             <div class="container">
                 <div class="row margin-b-50">
                     <div class="col-sm-12 scrollReveal sr-bottom">
-                        <h2 class="center-title">Say Hello!</h2>
+                        <h3 class="center-title">Say Hello!</h3>
                         <div class="center-border"></div>
                     </div>
                 </div><!--row-->
@@ -695,15 +704,7 @@
                     </div><!--form col end-->
                     <div class="col-sm-5 col-sm-offset-1 scrollReveal sr-right sr-delay-1">
                         <div class="contact-details">
-                            <p>Lorem Ipsum Street, <br> Park Ave.<br>(245) 485-493</p>
-                            <p class="lead"><a href="#">hello@xone.com</a></p>
-                            <ul class="list-inline">
-                                <li><a href="#"><i class="ion-social-facebook-outline"></i></a></li>
-                                <li><a href="#"><i class="ion-social-twitter-outline"></i></a></li>
-                                <li><a href="#"><i class="ion-social-googleplus-outline"></i></a></li>
-                                <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
-                                <li><a href="#"><i class="ion-social-linkedin-outline"></i></a></li>
-                            </ul>
+                            <p class="lead"><a href="#">savebaearea@gmail.com</a></p>
                         </div><!--contact detail-->
                     </div><!--contact detail col end-->
                 </div>
@@ -724,15 +725,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-5 margin-b-30">
-                        <span>&copy; Copyright 2016. xone by Design_mylife</span>
+                        <span>&copy; Copyright 2016. A.J. Uppal Web Design</span>
                     </div><!--copyright col-->
                     <div class="col-sm-7 text-right">
                         <ul class="list-inline margin-b-30">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
                         </ul>
                     </div><!--footer nav col-->
                 </div><!--row-->
@@ -758,7 +756,7 @@
         <!--end the modal of video-->
 
          <!--back to top-->
-        <a href="#" class="scrollToTop"><i class="ion-android-arrow-dropup-circle"></i></a>
+        <a href="#" class="scrollToTop" style="display: flex"><h5><sub>&copy; AJ Uppal Web Design</sub></h5><i class="fa fa-arrow-up"></i></a>
         <!--back to top end-->
 
         <!-- jQuery plugins-->
